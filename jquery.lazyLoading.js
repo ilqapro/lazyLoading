@@ -109,9 +109,8 @@ class LazyLoading {
                 this.addImageToLoaded( imageSrc, objectUrl )
                 this.insertImage( $target, objectUrl );
                 this.ajaxQueueBusy = false;
-                console.log(123)
             } else {
-                console.log(321)
+                this.ajaxQueueBusy = false;
             }
         })
     }
