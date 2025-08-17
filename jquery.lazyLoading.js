@@ -104,6 +104,7 @@ class LazyLoading {
                 responseType: 'blob',
             }
         }).done((responce) => {
+            console.log(responce)
             if (responce instanceof Blob) {
                 var objectUrl = URL.createObjectURL(responce);
                 this.addImageToLoaded( imageSrc, objectUrl )
