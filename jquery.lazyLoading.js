@@ -104,12 +104,14 @@ class LazyLoading {
                 responseType: 'blob',
             }
         }).done((responce) => {
-            console.log(responce)
             if (responce instanceof Blob) {
                 var objectUrl = URL.createObjectURL(responce);
                 this.addImageToLoaded( imageSrc, objectUrl )
                 this.insertImage( $target, objectUrl );
                 this.ajaxQueueBusy = false;
+                console.log(123)
+            } else {
+                console.log(321)
             }
         })
     }
