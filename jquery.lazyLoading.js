@@ -112,6 +112,8 @@ class LazyLoading {
             } else {
                 this.ajaxQueueBusy = false;
             }
+        }).fail(() => {
+            this.ajaxQueueBusy = false;
         })
     }
 
