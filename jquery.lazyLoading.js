@@ -70,8 +70,6 @@ class LazyLoading {
 
             this.ajaxQueueBusy = true;
 
-            console.log('handling');
-
             let queueItem = this.imagesQueue.shift();
 
             let $target = queueItem.target;
