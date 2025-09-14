@@ -60,6 +60,8 @@ class LazyLoading {
             imageSrc: imageSrc,
         }
 
+        console.log(queueItem)
+
         this.imagesQueue.push( queueItem );
 
     }
