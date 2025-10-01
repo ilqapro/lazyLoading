@@ -23,9 +23,7 @@ class LazyLoading {
             })
         }, { threshold: 0 })
     
-        let elemsToLoad = document.querySelectorAll('span.media-lazy:not(.loaded)')
-        elemsToLoad.forEach(e => observer.observe(e) );
-        console.log(elemsToLoad)
+        document.querySelectorAll('span.media-lazy:not(.loaded)').forEach(e => observer.observe(e) );
         
     }
 
